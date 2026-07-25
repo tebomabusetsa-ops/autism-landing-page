@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Spectrum Disorder (ASD) | Celebrating Differently Abled individuals</title>
+
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid black;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            color: white;
+            background: linear-gradient(to right, black);
+            transition: background 0.4s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>
+            Autism Spectrum Disorder (ASD)
+        </h1>
+
+        <h2>
+            Differently abled
+        </h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/179/465/original/Screenshot_20260409_022816_Chrome.jpg?1775694602"
+            alt="Autism Awareness Illustration of children learning" width="300">
+
+        <hr>
+        <div class="content">
+
+            <p>
+                <strong><span style="color: #ff6a01;"> Autism Spectrum Disorder (ASD)</span></strong>
+                is a neurodevelopmental Disorder
+                affecting how individuals communicate,
+                interact, and experience the world.
+            </p>
+        </div>
+        <p>It is a <strong><em>spectrum</em></strong>
+            with widely varying strengths and support needs,
+            characterized by
+            unique social interaction, nonverbal communication,
+            sensory processing, <br> and intense interests. </p>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Autism" target="_blank"> Read more about Autism
+            </a>
+        </p>
+        <p>
+            <button>
+                What is Autism?
+            </button>
+        </p>
+    </div>
+    <script>
+        let button = document.querySelector("button");
+        button.addEventListener("click", function () {
+            let answer = prompt("What is Autism best described as?");
+            if (answer === "neurodevelopmental disorder") {
+                alert("Correct💙");
+            } else {
+                alert("Autism is a neurodevelopmental disorder 💙");
+            }
+        });
+    </script>
+    <p>Coded by Tebogo Mabusetsa</p>
+
+</body>
+
+</html>
